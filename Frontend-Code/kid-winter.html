@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(74, 190, 151);
+            text-align: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            border-radius: 25px;
+            background-color: white;
+        }
+
+        h1 {
+            padding: 6px;
+            background-color: rgb(4, 56, 4);
+            margin-top: 2%;
+            color: white;
+        }
+
+
+        .card-wrapper {
+
+            margin-top: 10%;
+        }
+
+        .card-body {
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 14px;
+            background-color: white;
+
+
+        }
+
+        .btn {
+            background-color: rgb(181, 184, 9);
+            border: none;
+            font-size: 17px;
+            font-weight: bold;
+
+
+        }
+
+        .fa {
+
+            font-size: 35px;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        /*CSS for navbar*/
+        .navbar {
+            padding: 20px;
+            background-color: rgb(39, 32, 22);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+
+        .navbar:hover {
+            background-color: rgb(10, 155, 155);
+        }
+
+        .eco {
+            color: chocolate;
+            letter-spacing: 15px;
+            font-weight: bold;
+
+        }
+
+        .ecomerce:hover {
+            color: black;
+        }
+
+        .form-control {
+            margin-left: 220%;
+            width: 100%;
+            border-bottom-left-radius: 10px;
+
+        }
+
+        .form-control:hover {
+            background-color: rgb(163, 206, 245);
+        }
+
+        .btnA {
+            margin-left: 23%;
+            height: 40px;
+            width: 7%;
+            border-top-right-radius: 10px;
+            text-decoration: none;
+            background-color: chocolate;
+            color: black;
+            cursor: pointer;
+        }
+
+        .btnB {
+            margin-left: 10%;
+            height: 42px;
+            width: 7%;
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: chocolate;
+            color: black;
+            cursor: pointer;
+            text-align: center;
+
+        }
+
+        .btnC {
+            font-size: 40px;
+            margin-left: 5%;
+            color: chocolate;
+            width: 3%;
+            cursor: pointer;
+
+        }
+
+        .btnA:hover {
+            background-color: rgb(157, 181, 233);
+        }
+
+        .btnB:hover {
+            background-color: rgb(157, 181, 233);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <h2 class="eco"><i>ECOMMERCE</i></h2>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <button class="btnA btn-outline-none my-2 my-sm-0" type="submit">Search</button>
+
+        <a href="loging.html" class="btnB btn-primary">Login</a>
+        <a class="btnC btn-outline-none my-2 my-sm-0" href="card-page.html"><i class="fa fa-shopping-cart"
+                style="color:chocolate"></i></a>
+        </div>
+    </nav>
+
+
+    <header class="header"></header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <div class="container">
+                    <h1>Kid's Winter Wear's</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.0JFJsUoX2P2vkdd-VcR-mwHaJG?w=152&h=187&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears fit<br> for all and fabric is<br> best
+                                        silicon.
+                                    </p>
+                                    <h5 class="prize" style="color:gray">Rs.999.0</h5>
+                                    <a href="contact.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.NYr7ZF5PIla8EPubWORmvwAAAA?w=126&h=187&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.929.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.bPHA1iSwGhHuu92f9toapQAAAA?w=129&h=187&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.i-eKB5VbZsTJm3KxpvACGwHaJ4?w=140&h=187&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.799.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+
+                <div class="container">
+                    <h1>Kid's Winter Wear's</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.d7CM0pNtLxr3hHsTwk6iJwHaHa?w=187&h=187&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears fit<br> for all and fabric is<br> best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.1999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add
+                                        to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.jk3IMMyS7sZZZ5Bc02SJjgHaJ4?w=151&h=201&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.929.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to
+                                        Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.Hg8RaWqfPkYrnXgeGPFKEAHaKX?w=122&h=180&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to
+                                        Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.dznLD0gXXIUaLK2IfTP-CAHaIi?w=148&h=180&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to
+                                        Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+
+                <div class="container">
+                    <h1>Kid's Winter Wear's</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.O9bM1wOsYUynbdSvfzYTPQHaHa?w=201&h=201&c=7&r=0&o=5&pid=1.7"
+                                    alt="" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears<br> for all and fabric is<br> best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.799.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add
+                                        to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.qZtxms3D4fuGS5robAZgfgHaHa?w=205&h=205&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears<br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.929.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to
+                                        Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.g0dRluFSZa34C4q9nyZDNAHaHa?w=205&h=205&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Winter-wears </h4>
+                                    <p class="card-text">This Kid's Winter-wears <br>fit for all and fabric<br> is
+                                        best silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to
+                                        Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.uX4Z_gbIof6bXvyJX7e6WgHaHa?w=204&h=205&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:300px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Winter-wears</h4>
+                                    <p class="card-text">This Kid's Winter-wears<br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.799.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to
+                                        Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+    <footer class="foot"></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-
+    KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-
+    ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-
+    JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        const footer = document.querySelector('.foot')
+        fetch('/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                footer.innerHTML = data
+
+            })
+
+        const header = document.querySelector('.header')
+        fetch('/header.html')
+            .then(res => res.text())
+            .then(data => {
+                header.innerHTML = data
+
+            })
+    </script>
+
+</body>
+
+</html>

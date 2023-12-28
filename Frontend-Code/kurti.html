@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(74, 190, 151);
+            text-align: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            border-radius: 25px;
+            background-color: white;
+        }
+
+        h1 {
+            padding: 6px;
+            background-color: rgb(4, 56, 4);
+            margin-top: 2%;
+            color: white;
+        }
+
+
+        .card-wrapper {
+
+            margin-top: 10%;
+        }
+
+        .card-body {
+
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 14px;
+            background-color: white;
+
+
+        }
+
+        .btn {
+            background-color: rgb(181, 184, 9);
+            border: none;
+            font-size: 17px;
+            font-weight: bold;
+
+
+        }
+
+        .fa {
+
+            font-size: 35px;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        /*CSS for navbar*/
+        .navbar {
+            padding: 20px;
+            background-color: rgb(39, 32, 22);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+
+        .navbar:hover {
+            background-color: rgb(10, 155, 155);
+        }
+
+        .eco {
+            color: chocolate;
+            letter-spacing: 15px;
+            font-weight: bold;
+
+        }
+
+        .ecomerce:hover {
+            color: black;
+        }
+
+        .form-control {
+            margin-left: 220%;
+            width: 100%;
+            border-bottom-left-radius: 10px;
+
+        }
+
+        .form-control:hover {
+            background-color: rgb(163, 206, 245);
+        }
+
+        .btnA {
+            margin-left: 23%;
+            height: 40px;
+            width: 7%;
+            border-top-right-radius: 10px;
+            text-decoration: none;
+            background-color: chocolate;
+            color: black;
+            cursor: pointer;
+        }
+
+        .btnB {
+            margin-left: 10%;
+            height: 42px;
+            width: 7%;
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: chocolate;
+            color: black;
+            cursor: pointer;
+            text-align: center;
+
+        }
+
+        .btnC {
+            font-size: 40px;
+            margin-left: 5%;
+            color: chocolate;
+            width: 3%;
+            cursor: pointer;
+
+        }
+
+        .btnA:hover {
+            background-color: rgb(157, 181, 233);
+        }
+
+        .btnB:hover {
+            background-color: rgb(157, 181, 233);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <h2 class="eco"><i>ECOMMERCE</i></h2>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <button class="btnA btn-outline-none my-2 my-sm-0" type="submit">Search</button>
+
+        <a href="loging.html" class="btnB btn-primary">Login</a>
+        <a class="btnC btn-outline-none my-2 my-sm-0" href="card-page.html"><i class="fa fa-shopping-cart"
+                style="color:chocolate"></i></a>
+        </div>
+    </nav>
+
+    <header class="header"></header>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <div class="container">
+                    <h1>Women's Designer Kurti</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top" id="image"
+                                    src="https://th.bing.com/th/id/OIP.XKoBbqGh2NgbwyIp4_pE0AHaLF?w=185&h=277&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Yellow Kurti</h4>
+                                    <p class="card-text">This Yellow Kurti fit<br> for all and fabric is<br> best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.1999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.AhvTKuDjEgaiVMdq2E10RwHaOV?w=179&h=347&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Brown Kurti</h4>
+                                    <p class="card-text">This Brown Kurti Dress<br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.929.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.iSuzWsO7v-l2IsJvhE06zgHaJa?w=185&h=235&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Rani Color Kurti</h4>
+                                    <p class="card-text">This rani color Kurti<br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.Sl-1ZVnwq0HcFgjz4bpRpgHaLH?w=185&h=278&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Blue Goun</h4>
+                                    <p class="card-text">This Blue color goun <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+
+                <div class="container">
+                    <h1>Women's Designer Kurti</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.SX3kFxcgr5aPNm4_cTNF6gHaLH?w=185&h=278&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Sky-blue Kurti</h4>
+                                    <p class="card-text">This Sky blue Kurti fit<br> for all and fabric is<br> best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.1999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.hyp1Vi6rW5_C4qMgd-vl7gHaJ4?w=185&h=247&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Green Shaded Kurti</h4>
+                                    <p class="card-text">This Green shaded Kurti <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.929.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.Yw25-nxbkajcQNwTpW8amAHaPR?w=169&h=350&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pink Kurti dress</h4>
+                                    <p class="card-text">This Pink Kurti Dress <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.1999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.WxvmExqIZ8Uyh5Wf_8k64AHaPU?w=185&h=372&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Blue Printed kurti</h4>
+                                    <p class="card-text">Blue Printed Kurti<br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+
+                <div class="container">
+                    <h1>Women's Designer Kurti</h1>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.0ojFpu1seoT_scfY4ZQ8oAHaJ2?w=185&h=247&c=7&r=0&o=5&pid=1.7"
+                                    style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Gray printed Kurti</h4>
+                                    <p class="card-text">This gray printed<br> for all and fabric is<br> best silicon.
+                                    </p>
+                                    <h5 class="prize" style="color:gray">Rs.1999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.JhBXhi3rHFBOgXm3OFuPawHaOV?w=185&h=375&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Yellow printed Kurti</h4>
+                                    <p class="card-text">This Yellow shade kurti <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.929.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.o4rDoMQyj6a2AzJSrd1ZHwHaJ3?w=185&h=247&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title"> Gray Shaded Kurti</h4>
+                                    <p class="card-text">This Gray Shaded kurti <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.4999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 col-xs-12">
+                            <div class="card-wrapper">
+                                <img class="card-img-top"
+                                    src="https://th.bing.com/th/id/OIP.iLT-OH7CBy9Bv6ocq5MXPQHaML?w=185&h=304&c=7&r=0&o=5&pid=1.7"
+                                    alt="john" style="height:400px">
+                                <div class="card-body">
+                                    <h4 class="card-title">Pink printed Goun</h4>
+                                    <p class="card-text">This Pink Printed goun <br>fit for all and fabric<br> is best
+                                        silicon.</p>
+                                    <h5 class="prize" style="color:gray">Rs.3999.0</h5>
+                                    <a href="card-page.html" class="btn btn-primary"><i
+                                            class="fa fa-shopping-cart"></i>Add to Card</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+    <footer class="foot"></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-
+    KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-
+    ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-
+    JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        const footer = document.querySelector('.foot')
+        fetch('/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                footer.innerHTML = data
+
+            })
+
+        const header = document.querySelector('.header')
+        fetch('/header.html')
+            .then(res => res.text())
+            .then(data => {
+                header.innerHTML = data
+
+            })
+    </script>
+</body>
+
+</html>

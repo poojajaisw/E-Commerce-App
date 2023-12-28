@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-
+                            Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="ecomerce.css">
+    <link rel="stylesheet" type="text/css" href="manu-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            padding: 28px;
+            background-color: rgb(39, 32, 22);
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar:hover {
+            background-color: rgb(10, 155, 155);
+        }
+
+        .ecomerce {
+            font-size: 40px;
+            font-weight: bold;
+            color: chocolate;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 15px;
+
+
+        }
+
+        .ecomerce:hover {
+            color: black;
+        }
+
+        .form-control {
+            margin-left: 180%;
+            width: 100%;
+            border-bottom-left-radius: 10px;
+
+
+        }
+
+        .form-control:hover {
+            background-color: rgb(163, 206, 245);
+            color: black;
+        }
+
+        .btnA {
+            margin-left: 20%;
+            height: 40px;
+            width: 7%;
+            border-top-right-radius: 10px;
+            text-decoration: none;
+            background-color: chocolate;
+            color: black;
+            cursor: pointer;
+
+        }
+
+
+
+        .btnB {
+            margin-left: 10%;
+            height: 42px;
+            width: 7%;
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: chocolate;
+            color: black;
+            cursor: pointer;
+            text-align: center;
+            justify-content: center;
+
+        }
+
+        .btnC {
+            font-size: 40px;
+            margin-left: 5%;
+            color: chocolate;
+            width: 3%;
+            cursor: pointer;
+
+        }
+
+        .btnA:hover {
+            background-color: rgb(157, 181, 233);
+        }
+
+        .btnB:hover {
+            background-color: rgb(157, 181, 233);
+        }
+
+        .slogn {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+        }
+
+        h3 {
+            font-size: 100px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h3:hover {
+            color: chocolate;
+        }
+
+        p {
+            font-size: 23px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 500;
+        }
+
+        p:hover {
+            color: chocolate;
+        }
+
+        .container-maindiv-2 {
+            padding: 100px;
+        }
+
+
+        .maindiv1 {
+            width: 20%;
+            height: 26%;
+            position: absolute;
+            left: 12%;
+            top: 36%;
+            transform: translate(-50%, -50%);
+            background-image: url('https://cdn.pixabay.com/photo/2020/06/30/10/32/ecommerce-5355915_640.jpg');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: image 9s infinite;
+
+
+
+        }
+
+        @keyframes image {
+            0% {
+                background-image: url('https://cdn.pixabay.com/photo/2020/06/30/10/32/ecommerce-5355915_640.jpg');
+            }
+
+            15% {
+                background-image: url('https://cdn.pixabay.com/photo/2018/10/04/15/19/cupcake-3723832_640.jpg');
+            }
+
+            45% {
+                background-image: url('https://cdn.pixabay.com/photo/2016/11/23/17/25/woman-1853939_640.jpg');
+            }
+
+            65% {
+                background-image: url('https://cdn.pixabay.com/photo/2015/12/08/05/58/ice-skates-1082514_640.jpg');
+            }
+
+            85% {
+                background-image: url('https://cdn.pixabay.com/photo/2017/08/01/11/48/woman-2564660_640.jpg');
+            }
+        }
+
+        .maindiv2 {
+            width: 20%;
+            height: 26%;
+            position: absolute;
+            left: 37%;
+            top: 36%;
+            transform: translate(-50%, -50%);
+            background-image: url('https://cdn.pixabay.com/photo/2016/03/14/14/21/bride-1255520_640.jpg');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: wedding 9s infinite;
+
+
+
+        }
+
+        @keyframes wedding {
+            0% {
+                background-image: url('https://cdn.pixabay.com/photo/2016/03/14/14/21/bride-1255520_640.jpg');
+            }
+
+            15% {
+                background-image: url('https://cdn.pixabay.com/photo/2017/03/01/05/43/pink-shoes-2107618_640.jpg');
+            }
+
+            45% {
+                background-image: url('https://cdn.pixabay.com/photo/2018/01/25/04/38/people-3105398_640.jpg');
+            }
+
+            65% {
+                background-image: url('https://cdn.pixabay.com/photo/2017/08/05/12/16/dress-2583092_640.jpg');
+            }
+
+            85% {
+                background-image: url('https://cdn.pixabay.com/photo/2017/02/22/14/26/hair-2089548_640.jpg');
+            }
+        }
+
+        .maindiv3 {
+            width: 20%;
+            height: 26%;
+            position: absolute;
+            left: 63%;
+            top: 36%;
+            transform: translate(-50%, -50%);
+            background-image: url('https://cdn.pixabay.com/photo/2017/06/21/20/51/tshirt-2428521_640.jpg');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: mens-wear 9s infinite;
+
+
+
+        }
+
+        @keyframes mens-wear {
+            0% {
+                background-image: url('https://cdn.pixabay.com/photo/2017/06/21/20/51/tshirt-2428521_640.jpg');
+            }
+
+            15% {
+                background-image: url('https://cdn.pixabay.com/photo/2015/02/09/14/07/funny-629675_640.jpg');
+            }
+
+            45% {
+                background-image: url('https://cdn.pixabay.com/photo/2015/07/12/19/23/clothing-842338_640.jpg');
+            }
+
+            65% {
+                background-image: url('https://cdn.pixabay.com/photo/2018/02/08/11/54/male-3139289_640.jpg');
+            }
+
+            85% {
+                background-image: url('https://cdn.pixabay.com/photo/2020/05/27/16/02/mens-accessories-5227800_640.jpg');
+            }
+        }
+
+
+        .maindiv4 {
+            width: 20%;
+            height: 26%;
+            position: absolute;
+            left: 88%;
+            top: 36%;
+            transform: translate(-50%, -50%);
+            background-image: url('https://th.bing.com/th/id/OIP.E3D9G0w-XD1G97Mp2R2YkQHaEK?w=300&h=180&c=7&r=0&o=5&pid=1.7');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: mens 9s infinite;
+
+
+
+        }
+
+        @keyframes mens {
+            0% {
+                background-image: url('https://th.bing.com/th/id/OIP.E3D9G0w-XD1G97Mp2R2YkQHaEK?w=300&h=180&c=7&r=0&o=5&pid=1.7');
+            }
+
+            15% {
+                background-image: url('https://th.bing.com/th/id/OIP.2ZkYbMEQ1QwJvShDHsQCBwHaE8?w=254&h=180&c=7&r=0&o=5&pid=1.7');
+            }
+
+            45% {
+                background-image: url('https://th.bing.com/th/id/OIP.t0gayE0LXgL9cdP3XVeBuwHaE7?w=248&h=180&c=7&r=0&o=5&pid=1.7');
+            }
+
+            65% {
+                background-image: url('https://th.bing.com/th/id/OIP.A66TEv5RTRhRtfLLt56GXgHaFj?w=231&h=180&c=7&r=0&o=5&pid=1.7');
+            }
+
+            85% {
+                background-image: url('https://th.bing.com/th/id/OIP.DdEN3VDd69whGhVAwt1w8QHaFj?w=239&h=180&c=7&r=0&o=5&pid=1.7');
+            }
+        }
+
+
+        .container-maindiv-2 {
+            padding: 200px;
+            margin-top: 20%;
+        }
+
+
+        .maindiv-1 {
+            width: 70%;
+            height: 500px;
+            position: absolute;
+            left: 50%;
+            top: 80%;
+            transform: translate(-50%, -50%);
+            background-image: url('https://media.istockphoto.com/id/653003428/photo/fashionable-clothes-in-a-boutique-store-in-london.webp?b=1&s=612x612&w=0&k=20&c=roPS9dGErbe0uZfHrQzjN7jAcgXiKq3ZEMRS_voS7Y8=');
+            background-size: 100% 100%;
+            box-shadow: 1px 2px 10px 5px white;
+            animation: slider 15s infinite;
+
+
+
+        }
+
+        @keyframes slider {
+            0% {
+                background-image: url('https://media.istockphoto.com/id/653003428/photo/fashionable-clothes-in-a-boutique-store-in-london.webp?b=1&s=612x612&w=0&k=20&c=roPS9dGErbe0uZfHrQzjN7jAcgXiKq3ZEMRS_voS7Y8=');
+            }
+
+            15% {
+                background-image: url('https://cdn.pixabay.com/photo/2018/02/24/20/41/woman-3179182_640.jpg');
+            }
+
+            35% {
+                background-image: url('https://media.istockphoto.com/id/854321536/photo/look-at-this-gorgeous-dress.jpg?s=612x612&w=0&k=20&c=UyxEiEddYEFQPAoopwYs-_8xJ5vp0vKE0Sl3GnrQpK8=');
+            }
+
+            45% {
+                background-image: url('https://cdn.pixabay.com/photo/2019/03/26/02/51/woman-4081760_640.jpg');
+            }
+
+            55% {
+                background-image: url('https://media.istockphoto.com/id/909364218/photo/luxury-sparkling-womens-dresses-on-hangers.jpg?s=612x612&w=0&k=20&c=tnbgMif1jspo_o-qLs6Jht7xqkAMdfPRkEm3TTTydwM=');
+            }
+
+            65% {
+                background-image: url('https://media.istockphoto.com/id/656980138/photo/colorful-clorhes-on-racks-in-a-fashion-boutique.jpg?s=612x612&w=0&k=20&c=w96wcXG3lnt4r_Uq6RduTbvw6RyMKDXj6jE0CbN7EeU=');
+            }
+
+            75% {
+                background-image: url('https://media.istockphoto.com/id/935032524/photo/women-summer-dresses-on-display-at-camden-market.jpg?s=612x612&w=0&k=20&c=_L2DC3Fq4wST3v9fsonpJzARWpMibAVtWUkZXPrQALs=');
+            }
+
+            85% {
+                background-image: url('https://media.istockphoto.com/id/1190179908/photo/woman-legs-out-of-a-pile-of-clothes-on-the-floor-shopping-addiction-concept.jpg?s=612x612&w=0&k=20&c=xvxzCZzcMvMtixd7sogEQY7dO5TwisLNFJd-qoS6EyA=');
+            }
+        }
+    </style>
+    <title>Ecomerce</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <h1 class="ecomerce"><i>ECOMMERCE</i></h1>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+        <button class="btnA btn-outline-none my-2 my-sm-0" type="submit">Search</button>
+        <a href="loging.html" class="btnB btn-primary">Login</a>
+        <a class="btnC btn-outline-none my-2 my-sm-0" href="card-page.html">
+            <i class="fa fa-shopping-cart" style="color:chocolate"></i></a>
+        </div>
+    </nav>
+
+
+    <header class="header"></header>
+
+    <div class="container-maindiv">
+        <div class="maindiv1"></div>
+        <div class="maindiv2"></div>
+        <div class="maindiv3"></div>
+        <div class="maindiv4"></div>
+    </div>
+    <div class="container-maindiv-2">
+
+        <div class="maindiv-1"></div>
+    </div>
+
+    <footer class="foot"></footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-
+    KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-
+    ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-
+    JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+        const footer = document.querySelector('.foot')
+        fetch('/footer.html')
+            .then(res => res.text())
+            .then(data => {
+                footer.innerHTML = data
+
+            })
+
+        const header = document.querySelector('.header')
+        fetch('/header.html')
+            .then(res => res.text())
+            .then(data => {
+                header.innerHTML = data
+
+            })
+
+    </script>
+
+
+
+
+</body>
+
+</html>

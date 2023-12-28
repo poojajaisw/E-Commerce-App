@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="ecomerce.cs">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background-color: rgb(86, 185, 152);
+      margin-top: 10%;
+
+    }
+
+    h1 {
+      padding: 04px;
+      background-color: white;
+      text-align: center;
+      margin-top: 2%;
+    }
+
+    h1:hover {
+      background-color: chocolate;
+      color: white;
+    }
+
+    img {
+      margin-left: 4%;
+    }
+
+    h3 {
+      font-size: 22px;
+      margin-top: 40%;
+      padding: 12px;
+      background-color: #fff;
+      width: 250px;
+      border-radius: 12px;
+      text-align: center;
+      margin-right: 10%;
+    }
+
+    p {
+      font-size: 20px;
+      color: gray;
+      margin-top: 12%;
+      margin-left: 28%;
+      padding: 10px;
+      background-color: white;
+      width: 100px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .wrapper1 {
+      padding: 10px;
+      width: 200px;
+      background-color: #fff;
+      text-align: center;
+      min-width: 50%;
+      border-radius: 12px;
+      margin-top: 70%;
+
+
+    }
+
+    .wrapper1 button {
+      background-color: greenyellow;
+      width: 21%;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 600px;
+      cursor: pointer;
+      border-radius: 12px;
+    }
+
+    .plus {
+      margin-left: 15%;
+      text-align: center;
+    }
+
+    .minus {
+      margin-right: 15%;
+    }
+
+
+
+    .wrapper1 span.num {
+      font-size: 25px;
+
+
+    }
+
+    .num {}
+
+    .card {
+      margin-top: 2%;
+    }
+
+    .card-body-1 {
+      padding: 1px;
+      height: 50px;
+      margin-top: 0%;
+      text-align: left;
+      display: inline-flex;
+    }
+
+    .card-body-1 h4 {
+      margin-top: 28px;
+    }
+
+    .card-body-1 p {
+      text-align: right;
+      margin-left: 60%;
+    }
+
+    .card-body-2 {
+      padding: 1px;
+      height: 50px;
+      margin-top: 0%;
+      text-align: left;
+      display: inline-flex;
+    }
+
+    .card-body-2 h4 {
+      margin-top: 28px;
+    }
+
+    .card-body-2 p {
+      text-align: right;
+      margin-left: 30%;
+    }
+
+    .card-body-3 {
+      padding: 1px;
+      height: 50px;
+      margin-top: 0%;
+      text-align: left;
+      display: inline-flex;
+    }
+
+    .card-body-3 h4 {
+      margin-top: 28px;
+    }
+
+    .card-body-3 p {
+      text-align: right;
+      margin-left: 60%;
+    }
+
+    .btn {
+      text-align: center;
+      margin-left: 70px;
+    }
+
+    .btn {
+      height: 40px;
+      width: 40px;
+    }
+
+
+
+    .navbar {
+      padding: 23px;
+      background-color: rgb(39, 32, 22);
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .navbar:hover {
+      background-color: rgb(10, 155, 155);
+    }
+
+    .ecomerce {
+      font-size: 37px;
+      font-weight: bold;
+      color: chocolate;
+      margin-bottom: 1%;
+      letter-spacing: 15px;
+
+    }
+
+    .ecomerce:hover {
+      color: black;
+    }
+
+    .form-control {
+      margin-left: 220%;
+      width: 100%;
+      border-bottom-left-radius: 10px;
+
+    }
+
+    .form-control:hover {
+      background-color: rgb(163, 206, 245);
+    }
+
+    .btnA {
+      margin-left: 23%;
+      height: 40px;
+      width: 7%;
+      border-top-right-radius: 10px;
+      text-decoration: none;
+      background-color: chocolate;
+      color: black;
+      cursor: pointer;
+    }
+
+    .btnB {
+      margin-left: 10%;
+      height: 42px;
+      width: 7%;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: chocolate;
+      color: black;
+      cursor: pointer;
+      text-align: center;
+
+    }
+
+    .btnC {
+      font-size: 40px;
+      margin-left: 5%;
+      color: chocolate;
+      width: 3%;
+      cursor: pointer;
+
+    }
+
+    .btnA:hover {
+      background-color: rgb(157, 181, 233);
+    }
+
+    .btnB:hover {
+      background-color: rgb(157, 181, 233);
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <h4 class="ecomerce"><i>ECOMMERCE</i></h4>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
+    <button class="btnA btn-outline-none my-2 my-sm-0" type="submit">Search</button>
+
+    <a href="loging.html" class="btnB btn-primary">Login</a>
+    <a class="btnC btn-outline-none my-2 my-sm-0" href="card-page.html"><i class="fa fa-shopping-cart"
+        style="color:chocolate"></i></a>
+    </div>
+  </nav>
+
+
+
+
+  <header class="header"></header>
+
+  <div class="container">
+    <div class="row">
+      <!--2nd row container-->
+      <div class="col">
+        <div class="row">
+          <div class="col">
+            <h1>Item in Card</h1>
+            <img src="https://th.bing.com/th/id/OIP.pyFP-eJfeE1D94fId8KPigHaMy?w=185&h=319&c=7&r=0&o=5&pid=1.7"
+              alt="goun" style="height:400px" id="demo" />
+          </div>
+          <div class="col">
+            <h3 id="pooja">Women's Sari</h3>
+            <p id="poo">Rs.1999</p>
+            <button type="button" class="btn btn-primary" style="margin-left:100px" onclick="remove()"><i
+                class="fa fa-trash" aria-hidden="true"></i></button>
+          </div>
+          <div class="col">
+            <div class="wrapper1">
+              <button type="button" class="minus">-</button>
+              <span class="num">01</span>
+              <button type="button" class="plus">+</button>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <h1 class="card">Summary</h1>
+              <div class="card-body">
+                <div class="card-body-1">
+                  <h4>Cost</h4>
+                  <p style="color:gray">Rs.1000</p>
+                </div>
+                <div class="card-body-2">
+                  <h4>Shipping</h4>
+                  <p style="color:gray">Rs.45</p>
+                </div>
+                <div class="card-body-3">
+                  <h4>Total</h4>
+                  <p style="color:gray">Rs.1045</p>
+                </div>
+                <br>
+                <a href="1.html" class="btn btn-primary" style="width:50%">Checkout</a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    function remove() {
+      document.getElementById("demo").style.display = "none";
+      document.getElementById("pooja").innerHTML = "";
+      document.getElementById("poo").innerHTML = "Item Delete";
+
+    }
+
+    const plus = document.querySelector(".plus"),
+      minus = document.querySelector(".minus"),
+      num = document.querySelector(".num");
+
+    let a = 1;
+
+    plus.addEventListener("click", () => {
+      a++;
+      a = (a < 10) ? "0" + a : a;
+      num.innerText = a;
+      console.log(a);
+    });
+
+    minus.addEventListener("click", () => {
+      if (a > 1) {
+        a--;
+
+        a = (a < 10) ? "0" + a : a;
+        num.innerText = a;
+
+
+
+      }
+    });
+
+
+  </script>
+
+
+  <footer class="foot"></footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-
+KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-
+ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-
+JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+    const footer = document.querySelector('.foot')
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        footer.innerHTML = data
+
+      })
+
+    const header = document.querySelector('.header')
+    fetch('/header.html')
+      .then(res => res.text())
+      .then(data => {
+        header.innerHTML = data
+
+      })
+
+  </script>
+
+
+</body>
+
+</html>

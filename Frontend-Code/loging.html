@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-
+                          Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background-color: rgb(86, 185, 152);
+      margin-top: 5%;
+
+    }
+
+    h1 {
+      padding: 8px;
+      background-color: chocolate;
+      width: 100%;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 3%;
+      color: white;
+    }
+
+    h1:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .image {
+      width: 600px;
+      height: 430px;
+      box-shadow: 3px 4px 8px 6px white;
+    }
+
+    .form-control {
+      padding: 10px;
+      width: 500px;
+      margin-left: 32%;
+      margin-top: 0%;
+      font-family: arial;
+    }
+
+    .form-control:hover {
+      background-color: rgb(112, 206, 230);
+    }
+
+    .message {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .lable {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 32%;
+    }
+
+    .btn {
+      height: 50px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: bold;
+      margin-left: 32%;
+
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .navbar {
+      padding: 19px;
+      background-color: black;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .navbar:hover {
+      background-color: rgb(10, 155, 155);
+    }
+
+    .eco {
+      color: chocolate;
+      margin-left: 1%;
+      letter-spacing: 15px;
+      font-weight: bold;
+
+    }
+
+    .ecomerce:hover {
+      color: black;
+    }
+
+    input[type=text] {
+      margin-left: 220%;
+      width: 100%;
+      border-bottom-left-radius: 10px;
+
+
+    }
+
+    .form-control:hover {
+      background-color: rgb(163, 206, 245);
+    }
+
+    .btnA {
+      margin-left: 26%;
+      height: 47px;
+      width: 7%;
+      border-top-right-radius: 10px;
+      text-decoration: none;
+      background-color: chocolate;
+      color: black;
+      cursor: pointer;
+    }
+
+    .btnB {
+      margin-left: 10%;
+      height: 42px;
+      width: 7%;
+      border-radius: 10px;
+      text-decoration: none;
+      background-color: chocolate;
+      color: black;
+      cursor: pointer;
+      text-align: center;
+      justify-content: center;
+
+    }
+
+    .btnC {
+      font-size: 40px;
+      margin-left: 5%;
+      color: chocolate;
+      width: 3%;
+      cursor: pointer;
+
+    }
+
+    .btnA:hover {
+      background-color: rgb(157, 181, 233);
+    }
+
+    .btnB:hover {
+      background-color: rgb(157, 181, 233);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <h2 class="eco"><i>ECOMMERCE</i></h2>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    </form>
+    <button class="btnA btn-outline-none my-2 my-sm-0" type="submit">Search</button>
+
+    <a href="loging.html" class="btnB btn-primary">Login</a>
+    <a class="btnC btn-outline-none my-2 my-sm-0" href="card-page.html"><i class="fa fa-shopping-cart"
+        style="color:chocolate"></i></a>
+    </div>
+  </nav>
+
+  <header class="header"></header>
+  <div class="container">
+    <h1 class="heading">Login</h1>
+    <div class="row">
+      <div class="col">
+
+
+        <form action="" onsubmit="return loginForm()">
+          <div class="form-group">
+            <label for="email" class="lable">E-mail</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+              placeholder="Enter Your E-mail">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="password" class="lable">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <br><br>
+          <button type="submit" class="btn btn-primary" style="width:500px">Submit</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <footer class="foot"></footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-
+KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-
+ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-
+JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+
+    /*Javascript code for submit button*/
+
+    let username = document.getElementById("email");
+    let password = document.getElementById("password");
+    submit = 1
+
+    function loginForm() {
+      if (username.value === "") {
+        submit = 0;
+        alert("Username is empty")
+      } else {
+        submit = 1;
+      }
+
+      if (password.value === "") {
+        submit = 0;
+        alert("Password is empty")
+      } else {
+        submit = 1;
+      }
+
+      if (submit) {
+        alert("Login Successeful")
+        return true;
+      } else {
+        return false;
+      }
+
+    }
+
+
+
+    /* javascript for footer code*/
+    const footer = document.querySelector('.foot')
+    fetch('/footer.html')
+      .then(res => res.text())
+      .then(data => {
+        footer.innerHTML = data
+
+      })
+
+    /* javascript for header code*/
+
+    const header = document.querySelector('.header')
+    fetch('/header.html')
+      .then(res => res.text())
+      .then(data => {
+        header.innerHTML = data
+
+      })
+
+  </script>
+
+</body>
+
+</html>
